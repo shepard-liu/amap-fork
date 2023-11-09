@@ -1,0 +1,65 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+#*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+build
+3rdParty
+bin
+.vscode
+log/
+devel/
+sdk/include
+sdk/lib
+sdk/config
+sdk/scripts
+sdk/share
+sdk/env.sh
+sdk/local_setup.bash
+sdk/local_setup.sh
+sdk/local_setup.zsh
+sdk/setup.bash
+sdk/setup.sh
+sdk/setup.zsh
+sdk/.catkin
+sdk/_setup_util.py
+sdk/.rosinstall
+
+install/ubuntu16/lib
+install/ubuntu18/lib
+install/ubuntu20/lib
+install/install_framework/packages/com.vendor.product/data
+install/ubuntu16/*.json
+install/ubuntu16/*.yaml
+install/ubuntu18/*.json
+install/ubuntu18/*.yaml
+install/ubuntu20/*.json
+install/ubuntu20/*.yaml
