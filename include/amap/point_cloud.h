@@ -1,4 +1,4 @@
-#ifndef PROJECT_POINT_CLOUD_H
+﻿#ifndef PROJECT_POINT_CLOUD_H
 #define PROJECT_POINT_CLOUD_H
 
 #include <memory>

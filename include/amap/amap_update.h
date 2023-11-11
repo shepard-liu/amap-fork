@@ -1,4 +1,4 @@
-#ifndef PROJECT_AMAP_UPDATE_H
+﻿#ifndef PROJECT_AMAP_UPDATE_H
 #define PROJECT_AMAP_UPDATE_H
 
 #include <iostream>

@@ -1,4 +1,4 @@
-#ifndef PROJECT_AMAP_FACTORY_H
+﻿#ifndef PROJECT_AMAP_FACTORY_H
 #define PROJECT_AMAP_FACTORY_H
 
 #include <iostream>

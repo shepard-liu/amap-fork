@@ -1,4 +1,4 @@
-#ifndef PROJECT_ALIVE_LOOP_COMMON_H
+﻿#ifndef PROJECT_ALIVE_LOOP_COMMON_H
 #define PROJECT_ALIVE_LOOP_COMMON_H
 
 #include <vector>

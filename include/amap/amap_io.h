@@ -1,4 +1,4 @@
-#ifndef PROJECT_AMAP_IO_H
+﻿#ifndef PROJECT_AMAP_IO_H
 #define PROJECT_AMAP_IO_H
 
 #include <memory>

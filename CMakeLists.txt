@@ -127,18 +127,24 @@ set(VERSION_FILE_NAME "${PROJECT_NAME}ConfigVersion.cmake")
 set(DEFAULT_BUILD_TYPE "Release")
 
 if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES) # CMAKE_BUILD_TYPE does not work with multi-config generators like MSVC, Xcode, etc.
-    message(STATUS "Setting build type to '${DEFAULT_BUILD_TYPE}' as none was specified.")
+    message(WARNING "Setting build type to '${DEFAULT_BUILD_TYPE}' as CMAKE_BUILD_TYPE was not specified.")
     set(CMAKE_BUILD_TYPE "${DEFAULT_BUILD_TYPE}" CACHE
             STRING "Choose the type of build." FORCE)
 endif()
 
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-    set(CMAKE_INSTALL_PREFIX "$ENV{ProgramFiles\(x86\)}/${PROJECT_NAME}-${CMAKE_PROJECT_VERSION}" CACHE PATH "Default install path" FORCE)
+    if(WIN32)
+        set(DEFAULT_INSTALL_PREFIX "$ENV{ProgramFiles\(x86\)}/${PROJECT_NAME}-${CMAKE_PROJECT_VERSION}")
+    else()
+        set(DEFAULT_INSTALL_PREFIX "/usr/local/${PROJECT_NAME}-${CMAKE_PROJECT_VERSION}")
+    endif()
+
+    set(CMAKE_INSTALL_PREFIX ${DEFAULT_INSTALL_PREFIX} CACHE PATH "Default install path" FORCE)
 endif()
 
 
 #-----------------------------------
-# project dependencies
+# project dependenciesd
 #-----------------------------------
 
 find_package(Eigen3 REQUIRED QUIET)
@@ -181,7 +187,7 @@ install(
     TARGETS     amap
     EXPORT      amapTargets
     FILE_SET    HEADERS
-    DESTINATION "${HEADER_FILES_INSTALL_DIR}/amap"
+    DESTINATION "${HEADER_FILES_INSTALL_DIR}"
 )
 
 install(

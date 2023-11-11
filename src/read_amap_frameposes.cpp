@@ -1,7 +1,9 @@
+﻿
+#include <math.h>
 
 #include <iostream>
-#include <math.h>
-#include "amap_factory.h"
+
+#include "amap/amap_factory.h"
 
 using namespace alive;
 

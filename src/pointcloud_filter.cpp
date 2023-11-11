@@ -1,8 +1,10 @@
+﻿
+#include <math.h>
 
 #include <iostream>
-#include <math.h>
-#include "point_cloud.h"
-#include "voxel_filter.h"
+
+#include "amap/point_cloud.h"
+#include "amap/voxel_filter.h"
 
 using namespace alive;
 

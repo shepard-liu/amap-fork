@@ -1,4 +1,4 @@
-#ifndef PROJECT_AMAP_COMMON_H
+﻿#ifndef PROJECT_AMAP_COMMON_H
 #define PROJECT_AMAP_COMMON_H
 
 namespace alive

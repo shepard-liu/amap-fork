@@ -1,4 +1,4 @@
-#ifndef PROJECT_VOXEL_FILTER_H
+﻿#ifndef PROJECT_VOXEL_FILTER_H
 #define PROJECT_VOXEL_FILTER_H
 
 #include <limits>

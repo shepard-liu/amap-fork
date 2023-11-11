@@ -1,10 +1,12 @@
+﻿
 
+#include <math.h>
 
 #include <iostream>
-#include <math.h>
-#include "amap_common.h"
-#include "amap_io.h"
-#include "amap_factory.h"
+
+#include "amap/amap_common.h"
+#include "amap/amap_factory.h"
+#include "amap/amap_io.h"
 
 using namespace alive;
 

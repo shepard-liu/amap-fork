@@ -1,8 +1,10 @@
+﻿
 
+#include <math.h>
 
 #include <iostream>
-#include <math.h>
-#include "amap_update.h"
+
+#include "amap/amap_update.h"
 
 using namespace alive;
 

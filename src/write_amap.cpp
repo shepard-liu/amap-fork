@@ -1,10 +1,11 @@
-
-#include <iostream>
+﻿
 #include <math.h>
+
 #include <fstream>
+#include <iostream>
 #include <string>
 
-#include "amap_factory.h"
+#include "amap/amap_factory.h"
 
 using namespace alive;
 

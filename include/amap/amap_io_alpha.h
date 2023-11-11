@@ -1,4 +1,4 @@
-
+﻿
 #ifndef PROJECT_AMAP_IO_ALPHA_H
 #define PROJECT_AMAP_IO_ALPHA_H
 
