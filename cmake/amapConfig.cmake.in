@@ -3,6 +3,11 @@
 include("${CMAKE_CURRENT_LIST_DIR}/@PROJECT_NAME@Targets.cmake")
 check_required_components("@PROJECT_NAME@")
 
+set(HAS_BINARIES @HAS_BINARIES@)
+
 set_and_check(amap_INCLUDE_DIR "@PACKAGE_HEADER_FILES_INSTALL_DIR@")
 set_and_check(amap_LIBRARY_DIR "@PACKAGE_LIBRARY_FILES_INSTALL_DIR@")
-set_and_check(amap_BINARY_DIR "@PACKAGE_BINARY_FILES_INSTALL_DIR@")
+
+if(HAS_BINARIES)
+    set_and_check(amap_BINARY_DIR "@PACKAGE_BINARY_FILES_INSTALL_DIR@")
+endif()
