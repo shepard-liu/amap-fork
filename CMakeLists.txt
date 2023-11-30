@@ -146,8 +146,14 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES) # CMAKE_BUILD_TYPE
   )
 endif()
 
+# detect msys environment
+execute_process(COMMAND uname OUTPUT_VARIABLE uname)
+if(uname MATCHES "^(MSYS|MINGW)")
+  set(MSYS true)
+endif()
+
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-  if(WIN32)
+  if(WIN32 AND NOT MSYS)
     set(DEFAULT_INSTALL_PREFIX
         "$ENV{ProgramFiles\(x86\)}/${PROJECT_NAME}-${CMAKE_PROJECT_VERSION}"
     )
